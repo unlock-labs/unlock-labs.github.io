@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>UnlockJapanese</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="static/pure-min.css">
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="static/grids-responsive-old-ie-min.css">
+      <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="static/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0/bootstrap-social.min.css">
+  <style>
+    /* 
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+
+    html,
+    body,
+    button,
+    input,
+    select,
+    textarea,
+    .pure-g [class *="pure-u"] {
+      font-family: "PT Serif", serif;
+    }
+
+    body {
+      color: #526066;
+      background: #fcfbf8;
+    }
+
+    h2,
+    h3 {
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
+
+    h4 {
+      padding-top: 0.5em;
+    }
+
+    p {
+      line-height: 1.6em;
+    }
+
+
+    /*
+ * -- Layout Styles --
+ */
+
+    .l-content,
+    .l-contact {
+      margin: 0 auto;
+    }
+
+    .l-box {
+      padding: 0.5em 2em;
+    }
+
+    /*
+ * -- MENU STYLES --
+ * Make the menu have a very faint box-shadow.
+ */
+
+    .pure-menu {
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+    }
+
+
+    /*
+ * -- BANNER --
+ * The top banner with the headings. By using a combination
+ * of `display: table;` and `display: table-cell;`, we can
+ * vertically center the text.
+ */
+
+    .banner {
+      background: transparent url("static/image/banner.jpg") no-repeat;
+      background-size: 100% auto;
+      background-size: cover;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="static/image/banner.jpg", sizingMethod="scale");
+      width: 100%;
+      display: table;
+
+      text-align: center;
+      height: 300px;
+      margin-bottom: 2em;
+    }
+
+    .banner-head {
+      display: table-cell;
+      vertical-align: middle;
+      padding-bottom: 2em;
+      padding-top: 2em;
+      margin-bottom: 0;
+      font-size: 2em;
+      color: white;
+      font-weight: 500;
+      text-shadow: 0 1px 1px black;
+    }
+
+    h1 {
+      margin-left: 0.35em;
+      margin-right: 0.35em;
+    }
+
+    .second-row {
+      background: transparent url("static/image/middle-banner.jpg") no-repeat;
+      background-size: 100% auto;
+      background-size: cover;
+      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="static/image/banner.jpg", sizingMethod="scale");
+      width: 100%;
+      display: table;
+    }
+
+    .second-row-inner {
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    .second-row h1 {
+      color: #444;
+    }
+
+    .information {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .information-head {
+      color: black;
+      font-weight: 500;
+    }
+
+    .ribbon {
+      background: #3c3f42;
+      color: #fcfbf8;
+      text-align: center;
+    }
+
+    .ribbon a {
+      color: #d16c40;
+    }
+
+    .ribbon a:hover {
+      color: #6d4739;
+      text-decoration: none;
+    }
+
+    .ribbon p {
+      font-size: 1.2em;
+      font-weight: 100;
+    }
+
+    .ribbon .information {
+      padding: 2em;
+    }
+
+    .ribbon .l-text-box {
+      padding: 2em;
+    }
+
+    .ribbon a.dark-link {
+      color: darkgray;
+      font-size: smaller;
+    }
+
+    .footer {
+      background: #111;
+      color: #888;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #ddd;
+    }
+
+
+    /*
+ * -- PHONE MEDIA QUERIES --
+ * On phones, we want to reduce the height and font-size of the banner further
+ */
+
+    @media(min-width: 1025px) {
+      .banner {
+        height: 300px;
+        min-height: 33vh;
+        background-size: cover;
+      }
+      .banner-head {
+        font-size: 4em;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pure-menu pure-menu-horizontal">
+    <a href="." class="pure-menu-heading">UnlockJapanese</a>
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item">
+        <a href="#contact" class="pure-menu-link">Contact</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="#faq" class="pure-menu-link">FAQ</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="banner">
+    <h1 class="banner-head">
+      Language potential.
+      <br> Unlocked.
+    </h1>
+  </div>
+
+  <div class="l-content">
+
+    <div id="concept" class="concept information pure-g">
+
+      <div class="pure-u-1">
+        <h1>A complete path to Japanese fluency</h1>
+      </div>
+      <div class="first-row">
+        <div class="pure-u-1 pure-u-md-1-3 l-box">
+          <h3 class="information-head">Welcome beginners!</h3>
+          <p>
+            Start with the two Japanese syllabaries, hiragana ひらがな and katakana カタカナ, used to sound out words. Learn to recognize, pronounce,
+            and write these characters, as well as basic words using them.
+          </p>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-3 l-box">
+          <h3 class="information-head">Delve into kanji without fear</h3>
+          <p>
+            Ease into kanji 漢字, the beautiful and evocative ideographic writing system. Learn about characters stroke order, radical
+            components, and the richness of meanings and pronunciations.
+          </p>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-3 l-box">
+          <h3 class="information-head">Learn thousands of core words with examples</h3>
+          <p>
+            The
+            <a href="https://www.routledge.com/products/9780415610131">latest corpus research</a> has identified
+            <strong>five thousand</strong> words as the core of the language. Learn each word, one professionally-written and voice-narrated
+            sentence at a time.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="second-row">
+      <div class="concept information pure-g second-row-inner">
+        <div class="pure-u-1">
+          <h1>Read, watch, and listen to fluency</h1>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 l-box">
+          <h3 class="information-head">Compelling, addictive Japanese content</h3>
+          <p>
+            Blogs and stories, anime and drama, carefully curated by our staff to keep you coming back for more. Content for every level,
+            from beginner to advanced.
+          </p>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2 l-box">
+          <h3 class="information-head">Annotated and cross-referenced</h3>
+          <p>
+            Text and transcribed video and music, heavily cross-referenced to dictionaries, grammar notes, idioms, and cultural references.
+            Practice what you know, and learn more at the same time.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="concept information pure-g">
+      <div class="pure-u-1">
+        <h1>Harness the power of play and competition</h1>
+      </div>
+      <div class="third-row">
+        <div class="pure-u-1 pure-u-md-1-3 l-box">
+          <h3 class="information-head">Connect with the community</h3>
+          <p>
+            Meet and connect with like-minded learners. Create and join study guilds. Compete with friends on the leader boards. Share
+            your victories on social media.
+          </p>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-3 l-box">
+          <h3 class="information-head">Positive reinforcement</h3>
+          <p>
+            Earn experience points and level up your Japanese. Regular milestones and achievements let you know exactly how far you are
+            from understanding your favorite drama or manga.
+          </p>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-3 l-box">
+          <h3 class="information-head">Ask questions, get answers</h3>
+          <p>
+            Don’t quite understand why a sentence works? Would it have been right another way? Ask the community and realize your potential
+            together.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <!-- end information -->
+
+
+  </div>
+  <!-- end l-content -->
+
+
+
+  <div class="l-contact ribbon">
+    <div id="contact" class="information pure-g">
+      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-2-5 l-box">
+        <img class="pure-img-responsive" alt="calligraphy" src="static/image/calligrapher.jpg" width="100%">
+      </div>
+
+      <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5 l-box l-text-box">
+        <h1>Unlock Japanese is currently in development</h1>
+
+        <p>But get in touch!
+          <a href="https://twitter.com/unlockjapanese">
+            <i class="fa fa-twitter"></i>&nbsp;Twitter</a> |
+          <a href="mailto:unlockjapanese@gmail.com">
+            <i class="fa fa-envelope"></i>&nbsp;Email</a>
+        </p>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div id="faq" class="information pure-g">
+    <div class="pure-u-1 l-box">
+      <h1>Frequently-Asked Questions</h1>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2 l-box">
+      <h4 id="faq-new">Q. I’m new to learning Japanese, is Unlock Japanese for me?</h4>
+      <p>
+        Absolutely, yes. We have paid particular emphasis on the things that trip up beginners, like the memorizing the
+        <em>kana</em> syllabaries. As a beginner, you are lucky and can learn from many great online resources, but at Unlock
+        Japanese, we hope to provide you with a home, where you can spend the months and years getting to fluency.
+      </p>
+
+      <h4 id="faq-old-hat">Q. I’m familiar with many Japanese learning methods on the internet, what makes this any different?</h4>
+      <p>We, like you, are Japanese enthusiasts &amp; learners. We’ve all seen the hit-or-miss quality of online Japanese learning
+        resources. We all struggled to find reliable and legitimate sources of Japanese content that don’t cost a fortune.
+        We couldn’t find anything out there that satisfied our Japanese learning needs, so we decided to make our own.</p>
+
+      <p>Our driving vision for Unlock Japanese is to build, not just another Japanese learning website, but, rather, what we
+        want for ourselves, and for our families and friends. A course that takes you from absolute beginner to intermediate–advanced
+        levels of reading and listening comprehension. A source of curated and legal Japanese media, with something for everyone.
+        A community where you connect with friends and make new ones. An environment where you’re rewarded for your hard
+        work. A spaced-repetition methodology for scheduling reviews that’s well-founded in the psychological literature.
+        All integrated into one learning system.</p>
+
+      <h4 id="faq-source">Q. Where does Unlock Japanese source its content?</h4>
+      <p>Our content comes from a number of sources. We’ve engaged professional native-Japanese translators and educators to
+        produce the corpus of sentences that demonstrate the language’s top 5,000 words. We may also supplement this content
+        with
+        <a href="http://www.guidetojapanese.org/learn/grammar">Tae Kim’s Japanese Grammar Guide</a> and the
+        <a href="https://tatoeba.org/eng/downloads">Tatoeba/Tanaka Corpus</a>. Our native media will come from a variety of sources, both public like YouTube and
+        <a href="http://www.aozora.gr.jp/ ">Aozora Bunko</a>, and through licenses as for anime, manga, and drama.</p>
+
+      <h4 id="faq-mobile ">Q. Will Unlock Japanese be available on mobile devices?</h4>
+      <p>Yes. The website will certainly be mobile-friendly, and native iOS/Android apps are planned.</p>
+
+    </div>
+
+    <div class="pure-u-1 pure-u-md-1-2 l-box ">
+      <h4 id="faq-multilingual ">Q: Will Unlock Japanese be available in multiple languages?</h4>
+      <p>Yes. We’re going to focus on English speakers first, but our goal is to create a resource that non-English speakers
+        can use just as well as English speakers.</p>
+
+      <h4 id="faq-subscription ">Q. Will Unlock Japanese be subscription based?</h4>
+      <p>Yes. While the specifics have not been finalized, rest assured that we plan on having a ton of free content, which
+        should take you several months to get through.</p>
+
+      <h4 id="faq-why-subscription ">Q: Why have a subscription-based system? Why not offer everything for free?</h4>
+      <p>Thanks to the efforts of researchers and educators including
+        <a href="http://www.sdkrashen.com/
+          ">Professor Stephen Krashen</a>, we understand that foreign language input must be, among other things,
+        <a href="http://www.sdkrashen.com/content/articles/the_compelling_input_hypothesis.pdf ">
+          <em>compelling</em>
+        </a>. Engaging with Japanese input ought to put you in a state of flow, in the zone. We aim to fulfill this goal by bringing
+        you the Japanese anime, dramas, manga, novels, etc., that you crave to consume. We feel the ultimate instantiation
+        of language learning is working hard, watching the comprehensibility measure of an episode of Naruto or a chapter
+        of a Murakami novel rise until it’s finally within your grasp, and then diving in and engaging with it to a level
+        that you forget it’s in another language. In order to to bring you experiences like that, we plan to license creative
+        content from your favorite artists. We are looking at several ways to raise money for licensing fees, and subscriptions
+        are one of them.</p>
+
+      <h4 id="faq-when-beta ">Q. When will beta-testing begin?</h4>
+      <p>As of the end of 2017, we’re taking a break, but hope to have more information soon.</p>
+
+      <h4 id="faq-how-beta ">Q. How can I apply for beta-testing?</h4>
+      <p>Follow us on
+        <a href="https://twitter.com/unlockjapanese ">Twitter</a> and we’ll post as soon as we know.</p>
+
+      <h4 id="faq-help-wanted
+          ">Q. How else can I help?</h4>
+      <p>Besides beta-testing our platform, we could use help with web design, frontend and backend programming, and Japanese
+        NLP.
+        <a href="#contact ">Get in touch</a> and tell us what you have in mind. We’re moving fast and can’t accept help from everyone, but we’d
+        love to hear from you!</p>
+
+    </div>
+  </div>
+
+
+  <div class="footer l-box ">
+    Image credits:
+    <a href="https://flic.kr/p/p7UDQ3 ">Kevin Yank</a>,
+    <a href="https://flic.kr/p/qrM9nt">Moyan Brenn</a>,
+    <a href="https://flic.kr/p/rDyPTw" class="dark-link ">moriakimitsuru</a>.
+    <br />
+  </div>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-74606043-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+
+</html>
